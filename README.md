@@ -1,6 +1,9 @@
 ### 将bat.zip解压后添加到windows系统环境变量<br>
-### windows cmd中新增命令如下：<br>
+---
+![use](https://github.com/qqzgqq/windowscmdtools/blob/master/use1.gif)
 
+---
+### windows cmd中新增命令如下：<br>
 |command|instrctions|origin|
 |----|---|---|
 |c|清屏|bat|
@@ -21,3 +24,9 @@
 |scp|向linux系统传文件|该工具来自windows git
 |ssh |连接linux系统|该工具来自windows git|
 |ssh-keygen | 在windows当前用户下生成key|该工具来自windows git|
+eg1
+---
+![eg1](https://github.com/qqzgqq/windowscmdtools/blob/master/eg1.gif)
+---
+eg2
+![eg2](https://github.com/qqzgqq/windowscmdtools/blob/master/eg2.gif)
