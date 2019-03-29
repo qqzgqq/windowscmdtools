@@ -1,9 +1,9 @@
-### 将bat.zip解压后添加到windows系统环境变量<br>
+## **将bat.zip解压后添加到windows系统环境变量**<br>
 ---
 ![use](https://github.com/qqzgqq/windowscmdtools/blob/master/use1.gif)
 
 ---
-### windows cmd中新增命令如下：<br>
+## **windows cmd中新增命令如下：**<br>
 |command|instrctions|origin|
 |----|---|---|
 |c|清屏|bat|
@@ -31,5 +31,6 @@ eg1
 eg2
 ![eg2](https://github.com/qqzgqq/windowscmdtools/blob/master/eg2.gif)
 
-下载
+<br>
+# **下载**<br>
 [点击下载](https://github.com/qqzgqq/windowscmdtools/releases)
