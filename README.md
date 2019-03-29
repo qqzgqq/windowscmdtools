@@ -35,3 +35,6 @@
 
 # **下载**<br>
 [点击下载](https://github.com/qqzgqq/windowscmdtools/releases?_blank)
+
+<a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a><br>
+跳到自己博客列表：<a href="http://write.blog.csdn.net/postlist" target="_blank">http://write.blog.csdn.net/postlist</a>
