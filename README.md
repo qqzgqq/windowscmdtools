@@ -24,9 +24,9 @@
 |scp|向linux系统传文件|该工具来自windows git
 |ssh |连接linux系统|该工具来自windows git|
 |ssh-keygen | 在windows当前用户下生成key|该工具来自windows git|
+
 eg1
----
 ![eg1](https://github.com/qqzgqq/windowscmdtools/blob/master/eg1.gif)
----
+
 eg2
 ![eg2](https://github.com/qqzgqq/windowscmdtools/blob/master/eg2.gif)
