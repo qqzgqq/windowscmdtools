@@ -1,8 +1,8 @@
 package main
 
 import (
-	"copynew/copyfile"
-	"copynew/template"
+	"windowscmdtools/copynew/copyfile"
+	"windowscmdtools/copynew/template"
 	"flag"
 	"fmt"
 	"os"
