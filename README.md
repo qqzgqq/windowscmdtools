@@ -34,4 +34,4 @@
 <br>
 
 # **下载**<br>
-<a href="https://github.com/qqzgqq/windowscmdtools/releases" target="_blank">点击下载</a>
+<a href="https://github.com/qqzgqq/windowscmdtools/releases?_blank" >点击下载</a>
