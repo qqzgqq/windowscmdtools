@@ -30,3 +30,6 @@ eg1
 
 eg2
 ![eg2](https://github.com/qqzgqq/windowscmdtools/blob/master/eg2.gif)
+
+下载
+[点击下载](https://github.com/qqzgqq/windowscmdtools/releases)
