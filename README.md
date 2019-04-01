@@ -21,15 +21,9 @@
 |touch|新建文件|bat|
 |cp|拷贝文件（拷贝文件夹后续更新）|windowscmdtools/copynew/|
 |findf|findf -name filename -dir d:\dir|windowscmdtools/findf/|
-|scp|向linux系统传文件|该工具来自windows git
-|ssh |连接linux系统|该工具来自windows git|
-|ssh-keygen | 在windows当前用户下生成key|该工具来自windows git|
 
 ## **eg1**<br>
 ![eg1](https://github.com/qqzgqq/windowscmdtools/blob/master/eg1.gif)
-
-## **eg2**<br>
-![eg2](https://github.com/qqzgqq/windowscmdtools/blob/master/eg2.gif)
 
 <br>
 
