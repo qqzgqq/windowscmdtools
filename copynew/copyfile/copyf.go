@@ -8,6 +8,7 @@ import (
 
 // CopyF cy file
 func CopyF(src, dst string) (int64, error) {
+
 	sourceFileStat, err := os.Stat(src)
 	if err != nil {
 		return 0, err
@@ -31,3 +32,5 @@ func CopyF(src, dst string) (int64, error) {
 	nBytes, err := io.Copy(destination, source)
 	return nBytes, err
 }
+
+// CopyD copy dir

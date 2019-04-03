@@ -1,11 +1,11 @@
 package main
 
 import (
-	"windowscmdtools/copynew/copyfile"
-	"windowscmdtools/copynew/template"
 	"flag"
 	"fmt"
 	"os"
+	"windowscmdtools/copynew/copyfile"
+	"windowscmdtools/copynew/template"
 )
 
 func main() {
@@ -16,11 +16,41 @@ func main() {
 	Srclx := template.ChecksrcexisT(SRC)
 	DstExist, Dstlx := template.CheckdstexisT(DST)
 	DSTFILEE := template.CheckdstfileexisT(SRC, DST)
+	//src is dir and dst is dir
 	if Srclx && Dstlx {
 		fmt.Println("it is dir")
-	} else if Srclx == false && Dstlx == false {
-		if DstExist {
-			fmt.Printf(SRC + " is oready exist,oevr it Y/N:")
+	}
+
+	//src is file and dst is not exist file
+	if Srclx == false && DstExist {
+		copyfile.CopyF(SRC, DST)
+	}
+	//src is file and dst is exist file
+	if Srclx == false && DstExist == false {
+		if Dstlx == false {
+			fmt.Printf(DST + " is oready exist,oevr it Y/N:")
+			fmt.Scanln(&pd)
+			if pd == "y" || pd == "Y" {
+				if SRC == DST {
+					// src and dst is in the same dir
+					copyfile.CopyF(SRC, DST+".bak")
+				}
+				copyfile.CopyF(SRC, DST)
+
+			} else {
+				os.Exit(0)
+			}
+		} else {
+			// src is file and dst is dir not exist file
+			copyfile.CopyF(SRC, DST+"\\"+SRC)
+		}
+
+	}
+
+	//src is file and dst is dir and exist file
+	if Srclx == false && Dstlx {
+		if DSTFILEE {
+			fmt.Printf(DST + "\\" + SRC + " is oready exist,oevr it Y/N:")
 			fmt.Scanln(&pd)
 			if pd == "y" || pd == "Y" {
 				copyfile.CopyF(SRC, DST)
@@ -30,33 +60,6 @@ func main() {
 		} else {
 			copyfile.CopyF(SRC, DST)
 		}
-
-	} else if Srclx == false && Dstlx {
-		if DSTFILEE {
-			fmt.Printf(SRC + " is oready exist,oevr it Y/N:")
-			fmt.Scanln(&pd)
-			if pd == "y" || pd == "Y" {
-				copyfile.CopyF(SRC, DST+"\\"+SRC)
-			} else {
-				os.Exit(0)
-			}
-		} else {
-			copyfile.CopyF(SRC, DST+"\\"+SRC)
-		}
 	}
 
-	// _, err := copyfile.CopyF(SRC, DST)
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// Dirtest:="h:\\test1233"
-	// errr := os.Mkdir(Dirtest, 0755)
-	// if errr != nil {
-	// 	fmt.Printf(": ")
-	// }
-	// fmt.Println("copy bak ,del dstdir ,copy src ,del bak ")
-
 }
-file > file ok
-file > dir ok
-file > dir\file no

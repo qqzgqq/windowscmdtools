@@ -3,10 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
-	"newls/lsused"
-	"newls/template"
 	"os"
 	"regexp"
+	"windowscmdtools/newls/lsused"
+	"windowscmdtools/newls/template"
 )
 
 // LL check ls -l

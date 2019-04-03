@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math"
-	"newls/template"
 	"os"
 	"strconv"
 	"strings"
+	"windowscmdtools/newls/template"
 )
 
 // DirSIZESUM cale the dir sum size
@@ -51,7 +51,8 @@ func DISPLAYcolor(s, ss string) {
 func CHECKFILEORDIr(DIr string) {
 	f, err := os.Stat(DIr)
 	if err != nil {
-		panic(err)
+		template.ReD(DIr + "is not exsit")
+		os.Exit(0)
 	}
 	if f != nil {
 		splitstring := strings.Split(DIr, "\\")
@@ -67,7 +68,9 @@ func ONEFILEDISplay(s string) (string, string) {
 	var FIlename string
 	f, err := os.Stat(s)
 	if err != nil {
-		panic(err)
+		template.ReD(s + "is not exsit")
+		os.Exit(0)
+
 	}
 	if f != nil {
 
@@ -85,7 +88,8 @@ func ONEFILEDISplay(s string) (string, string) {
 func CHECKFILEORDIR2(DIr string) {
 	f, err := os.Stat(DIr)
 	if err != nil {
-		panic(err)
+		template.ReD(DIr + "is not exsit")
+		os.Exit(0)
 	}
 	if f != nil {
 		if strings.Contains(DIr, "\\") {

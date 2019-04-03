@@ -33,15 +33,17 @@ func ChecksrcexisT(s string) bool {
 
 // CheckdstexisT check file exist
 func CheckdstexisT(s string) (bool, bool) {
-	// var pd string
 	var dstexist = false
 	var dstlx = false
-	f, err := os.Stat(s)
-	if f.IsDir() {
-		dstlx = true
-	}
-	if err == nil {
+	F, err := os.Stat(s)
+	if err != nil {
 		dstexist = true
+		return dstexist, dstlx
+	}
+
+	if F.IsDir() {
+		dstlx = true
+		return dstexist, dstlx
 	}
 	return dstexist, dstlx
 }
