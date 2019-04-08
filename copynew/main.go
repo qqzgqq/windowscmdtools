@@ -17,7 +17,7 @@ func main() {
 	DstExist, Dstlx := template.CheckdstexisT(DST)
 	DSTFILEE := template.CheckdstfileexisT(SRC, DST)
 	//src is dir and dst is dir
-	if Srclx && Dstlx {
+	if Srclx {
 		DIrfile := copyfile.MKFDIR(SRC, DST)
 		copyfile.CPall(SRC, DIrfile)
 	}
