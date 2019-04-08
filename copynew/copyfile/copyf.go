@@ -32,5 +32,3 @@ func CopyF(src, dst string) (int64, error) {
 	nBytes, err := io.Copy(destination, source)
 	return nBytes, err
 }
-
-// CopyD copy dir
