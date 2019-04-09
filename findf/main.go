@@ -25,7 +25,7 @@ var SEARCHDIR *string
 // HeLP1 -h
 var HeLP1 *bool
 
-// HeLP1 -help
+// HeLP2 -help
 var HeLP2 *bool
 
 func init() {
@@ -50,7 +50,7 @@ func Helpinfo(h, help *bool) {
 		fmt.Printf("   -help   The tool findnew help info \n")
 		fmt.Printf("   -name   the string will be search\n")
 		fmt.Printf("   -dir    the dir for search\n")
-		YelloW("eg:     findnew -name  a.txt -dir d:\\  \n")
+		YelloW("eg:     findnew -dir d  -name  a.txt \n")
 		os.Exit(0)
 	}
 }
